@@ -46,29 +46,28 @@ const homeTexts = {
     en: "Ukrainian",
 
   },
+  "home_page-8": {
+    ua: "Ласкаво просимо на сторінку!",
+    en: "Welcome To Page!",
+
+  },
+  "home_page-9": {
+    ua: "Планування маршрутів та оптимізація процесу доставки",
+    en: "Planning routes and optimizing the delivery process",
+
+  
+
+  },
+  "home_page-10":{
+    ua:"Мета прокладання маршрутів і оптимізації процесу доставки товарів полягає в забезпеченні ефективності та економічної вигоди при здійсненні доставки товарів. Це означає зменшення часу та витрат на доставку, зниження витрат на паливо та інші експлуатаційні витрати, покращення обслуговування клієнтів та забезпечення надійної та швидкої доставки товарів до клієнтів. Мета оптимізації процесу доставки полягає у забезпеченні максимальної ефективності та оптимальності маршруту, забезпечення вчасної доставки та задоволення потреб клієнтів.",
+    en:"The purpose of route planning and optimization is to ensure efficiency and cost-effectiveness in the delivery of goods. This means reducing delivery time and costs, lowering fuel and other operating costs, improving customer service, and ensuring that goods are delivered reliably and quickly to customers. The goal of optimizing the delivery process is to maximize efficiency and route optimization, ensure on-time delivery, and meet customer needs."
+  },
+  "home_page-11":{
+    ua:"Оптимізація доставки",
+    en:"Delivery optimization"
+  }
 };
-// const anotherTexts = {
-//   "another_page-title": {
-//     ua: "",
-//     en: "",
-//   },
-//   "another_page-1": {
-//     ua: "",
-//     en: "",
-//   },
-//   "another_page-2": {
-//     Uint16Array: "",
-//     en: "",
-//   },
-//   "another_page-3": {
-//     ua: "",
-//     en: "",
-//   },
-//   "another_page-4": {
-//     ua: "",
-//     en: "",
-//   },
-// };
+
 
 // Проверка пути страницы сайта
 function checkPagePathName() {
@@ -153,3 +152,39 @@ function checkBrowserLang() {
 }
 
 console.log("navigator.language", checkBrowserLang());
+
+//JS Scroll
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href')
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+
+
+  })
+}
+
+// //burger
+// const burger = document?.querySelector('[data-burger]');
+// const nav = document?.querySelector('[data-nav]');
+// const navItems = nav?.querySelectorAll('a');
+// const body = document.body;
+// burger?.addEventListener('click', () => {
+//   body.classList.toggle('stop-scroll');
+//   burger?.classList.toggle('burger--active');
+//   nav?.classList.toggle('nav--visible');
+// });
+// navItems.forEach(el=>{
+//   el.addEventListener('click',()=>{
+//     body.classList.remove('stop-scroll');
+//     burger?.classList.remove('burger--active');
+//     nav?.classList.remove('nav--visible');
+//   });
+// });

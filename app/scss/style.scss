@@ -4,186 +4,219 @@
 @import 'libs';
 @import 'global';
 
-
-
 .nav {
-    // margin: 0 auto;
-    margin: 25px 0px 25px 0px;
-    display: flex;
-    justify-content: space-between;
-  
-  
-    .menu {
-  
-      &__list {
-        gap: 0 50px;
-        display: flex;
-        justify-content: space-between;
-  
-        color: #000;
-       font-size: 22px;
-        font-weight: 400;
-        line-height: 36px;
-  
-  
-      }
-  
-      &__list-item {
-        display: flex;
-        align-items: center;
-        
-      }
-     
-  
-      &__list-link {
-        color: #fff;
-      
-      }
-  
-  
-  
-  
-  
-    }
-  
-   
-        
-    }
-    .menu-left{
+	// margin: 0 auto;
+	margin: 25px 0px 25px 0px;
+	display: flex;
+	justify-content: space-between;
 
-        .menu__list-item{
-            :hover{
-                color:yellow;
-                transition:all .8s;
-            }
-        }
-    }
-    .menu-right {
-      margin-right: 50px;
-  
-      text-transform: uppercase;
-  
-    }
+	.menu {
+		&__list {
+			gap: 0 50px;
+			display: flex;
+			justify-content: space-between;
 
+			color: #000;
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 36px;
+		}
 
+		&__list-item {
+			display: flex;
+			align-items: center;
+		}
 
+		&__list-link {
+			color: #fff;
+		}
+	}
+}
+.menu-left {
+	.menu__list-item {
+		:hover {
+			color: yellow;
+			transition: all 0.8s;
+		}
+	}
+}
+.menu-right {
+	margin-right: 50px;
+
+	text-transform: uppercase;
+}
+.header{
+	margin-bottom:180px;
+}
 .header__btn {
-    /* Variables */
-    margin-top: 3px;
-    --button_radius: 0.55em;
-    --button_color: #e8e8e8;
-    --button_outline_color: #000000;
-    font-size: 17px;
-    font-weight: bold;
-    border: none;
-    border-radius: var(--button_radius);
-    background: var(--button_outline_color);
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid var(--button_outline_color);
-    border-radius: var(--button_radius);
-    padding: 0.55em 1.25em;
-    background: var(--button_color);
-    color: var(--button_outline_color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
-  }
-  
-  .button_top {}
-  
-  .header__btn:hover {
-    /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
-  }
-  
-  .header__btn:active {
-    /* Push the button downwards when pressed */
-    transform: translateY(0);
-  }
+	/* Variables */
+	margin-top: 3px;
+	--button_radius: 0.55em;
+	--button_color: #e8e8e8;
+	--button_outline_color: #000000;
+	font-size: 17px;
+	font-weight: bold;
+	border: none;
+	border-radius: var(--button_radius);
+	background: var(--button_outline_color);
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid var(--button_outline_color);
+	border-radius: var(--button_radius);
+	padding: 0.55em 1.25em;
+	background: var(--button_color);
+	color: var(--button_outline_color);
+	transform: translateY(-0.2em);
+	transition: transform 0.1s ease;
+}
+
+.button_top {
+}
+
+.header__btn:hover {
+	/* Pull the button upwards when hovered */
+	transform: translateY(-0.33em);
+}
+
+.header__btn:active {
+	/* Push the button downwards when pressed */
+	transform: translateY(0);
+}
+
+.earth {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 150px;
+	&__inner {
+	
+		margin-right: 35px;
+		margin-left: 35px;
+		}
+		&__title {
+			font-size: 36px;
+			font-weight: 900;
+			line-height: 46px;
+			margin-bottom: 40px;
+		}
+		&__subtitle {
+			font-size: 44px;
+			margin-bottom: 55px;
+		}
+		&__text{
+			font-style: 28px;
+			line-height: 36px;
+		}
+		&__img {
+			width: 650px;
+			height: 550px;
+		}
+}
 
 
 
 
+.container {
+}
+.deliver {
+	&__title {
+		font-size: 44px;
+		line-height: 56px;
+		text-align: center;
+	}
+	&__inner {
+	}
+}
 
-
-
-
+	
 
 
 
 /* 320px - найменший девайс. Це гранична ширина екрану, під яку потрібно перевіряти верстку */
 /* 991px - ширина планшетів */
 
-
 /* == ВАРІАНТ 1 == */
 
 /* Екстремальні девайси (портретні телефони, < 576px)  */
 /* Малі девайси (горизонтальні телефони, >= 576px) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Середні девайси (планшети, >= 768px) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 /* Великі девайси (десктопи, >= 992px) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* Надвеликі девайси (великі десктопи, >= 1200px) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* Мегавеликі девайси (великі десктопи, >=1400px) */
-@media (min-width: 1400px) {}
-
+@media (min-width: 1400px) {
+}
 
 /* == ВАРІАНТ 2 == */
 
 /* Екстремальні девайси (телефони, < 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 /* Малі девайси (горизонтальні телефони, < 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+}
 
 /* Середні девайси (планшети, < 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+}
 
 /* Великі девайси (великі десктопи, < 1200px) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+}
 
 /* Мегавеликі девайси (великі десктопи) */
 /* Тут нема @media, так як такі брейкпойнти не мають верхньої межі по ширині width */
-
 
 /* == ВАРІАНТ 2 (власний)== */
 
 /* Екстремальні девайси (телефони, < 576px) */
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
 /* Малі девайси (горизонтальні телефони, < 768px) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+}
 
 /* Середні девайси (планшети, < 992px) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+}
 
 /* Великі девайси (великі десктопи, < 1200px) */
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
 /* Мегавеликі девайси (великі десктопи) */
 /* Тут нема @media, так як такі брейкпойнти не мають верхньої межі по ширині width */
 
-
 /* == ВАРІАНТ 3 == */
 
 /* Екстремальні девайси (портретні телефони, < 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 /* Малі девайси (горизонтальні телефони, >= 575px) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
 
 /* Середні девайси (планшети, >= 768px) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
 
 /* Великі девайси (десктопи, >= 992px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
 /* Мегавеликі девайси (великі десктопи, >= 1200px) */
-@media (min-width: 1200px) {}
-
+@media (min-width: 1200px) {
+}
