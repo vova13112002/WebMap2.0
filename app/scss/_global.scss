@@ -6,11 +6,11 @@ body {
 	background-color: #eee;
   
   
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	// background-color: var(--var-bgcolor);
 	// color: var(--var-fontcolor);
 	font-size: 18px;
-	font-family: sans-serif;
+	
 	background: #303030;
 	color: #fff;
 }
@@ -33,7 +33,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.container__deliver{
+	max-width: 1640px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 
 
 //стилізація скрола

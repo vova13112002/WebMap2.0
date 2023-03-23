@@ -17,13 +17,13 @@ const homeTexts = {
 
   },
   "home_page-2": {
-    ua: "Прокладання маршрутів",
-    en: "Creating routes",
+    ua: "Оптимізація доставки ",
+    en: "Delivery optimization",
 
   },
   "home_page-3": {
-    ua: "Оптимізація доставки",
-    en: "Delivery optimization",
+    ua: "Прокладання маршрутів",
+    en: "Creating routes",
 
   },
   "home_page-4": {
@@ -65,7 +65,17 @@ const homeTexts = {
   "home_page-11":{
     ua:"Оптимізація доставки",
     en:"Delivery optimization"
-  }
+  },
+  "home_page-12": {
+    ua: "Оптимізація доставки - це процес підвищення ефективності та зниження вартості доставки товарів або послуг від місця виробництва до місця призначення.Цей процес включає вибір найефективніших маршрутів доставки, найкраще використання ресурсів (наприклад, транспортних засобів і працівників), а також мінімізацію витрат на паливо, знос транспортних засобів та інших операційних витрат.",
+    en: "Delivery optimization is the process of increasing the efficiency and reducing the cost of delivering goods or services from the point of production to the destination. This process includes selecting the most efficient delivery routes, making the best use of resources (e.g., vehicles and employees), and minimizing fuel costs, vehicle wear and tear, and other operating expenses."
+
+  },
+  "home_page-13": {
+    ua: "Оптимізація доставки може бути особливо важливою для компаній електронної комерції, які мають велику кількість замовлень, а також для компаній, які керують складами та розподільчими центрами. Оптимізація доставки може допомогти зменшити витрати на доставку та покращити клієнтський досвід.",
+    en: " Delivery optimization can be especially important for e-commerce companies that have a large number of orders, as well as for companies that operate warehouses and distribution centers. Delivery optimization can help reduce shipping costs and improve customer experience.",
+
+  },
 };
 
 
@@ -155,21 +165,21 @@ console.log("navigator.language", checkBrowserLang());
 
 //JS Scroll
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+// const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+// for (let anchor of anchors) {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault()
 
-    const blockID = anchor.getAttribute('href')
-    document.querySelector('' + blockID).scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    })
+//     const blockID = anchor.getAttribute('href')
+//     document.querySelector('' + blockID).scrollIntoView({
+//       behavior: "smooth",
+//       block: "start"
+//     })
 
 
-  })
-}
+//   })
+// }
 
 // //burger
 // const burger = document?.querySelector('[data-burger]');

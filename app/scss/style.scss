@@ -103,8 +103,9 @@
 			margin-bottom: 55px;
 		}
 		&__text{
-			font-style: 28px;
-			line-height: 36px;
+			font-size: 20px;
+			line-height: 28px;
+			font-weight: 500;
 		}
 		&__img {
 			width: 650px;
@@ -118,16 +119,50 @@
 .container {
 }
 .deliver {
+	margin-bottom: 150px;
 	&__title {
 		font-size: 44px;
 		line-height: 56px;
 		text-align: center;
+		
+	}
+
+	.poloska__delivery{
+		height: 6px;
+		width: 75px;
+		border-radius:50px;
+		background-color: #FFCA42;
+		margin: 0 auto;
+		margin-top: 23px
+		
 	}
 	&__inner {
+		// display: grid;
+		// grid-template-columns: 1fr 1fr;
+		margin-top: 100px;
+		
+		.deliver__img{
+			float:left;
+			margin-right: 25px;
+		}
+		.deliver__text{
+			
+font-weight: 500;
+line-height: 26px;
+
+
+			font-size: 22px;
+
+		}
+		.deliver__first-text{
+			margin-bottom: 35px;
+		}
 	}
-}
 
 	
+}
+
+
 
 
 
