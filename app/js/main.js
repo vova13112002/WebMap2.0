@@ -91,7 +91,61 @@ const homeTexts = {
     en: "Choose the shipping: Choose a shipping service with enough protection that you need. If you have very fragile items, youmay need to use a service with insurance. Check the packaging: Before shipping, make sure that the box is well packed and everything with fasteners is in place.You need to check that nothing is moving inside the box and that the packaging has no weaknesses.By keeping these simple steps in mind, you can make sure your items are shipped safely. ",
 
   },
-  
+   "home_page-17": {
+    ua: "Зважаючи на те, що доставка товару є важливою частиною бізнесу, особливо для онлайн-магазинів, в яких багато товарів продаються в Інтернеті, оптимізація процесу доставки може значно зменшити витрати і покращити задоволеність клієнтів. Ось кілька пунктів, які можуть допомогти оптимізувати доставку товару:",
+    en: "Given that shipping is an important part of a business, especially for online retailers with many products products are sold online, optimizing the shipping process can significantly reduce costs and improve customer satisfaction. Here are a few points that can help optimize product delivery:",
+
+  },
+   "home_page-18": {
+    ua: "Використовуйте автоматизовану систему відстеження",
+    en: "Use an automated tracking system",
+
+  },
+   "home_page-19": {
+    ua: "Використовуйте інформаційну систему щоб визначити, які товари можуть бути доставлені разом, щоб зменшити кількість поїздок",
+    en: "Use the information system to determine which products can be delivered together to reduce the number of trips",
+
+  },
+   "home_page-20": {
+    ua: "Співпрацюйте з надійними перевізниками",
+    en: "Cooperate with reliable carriers",
+
+  },
+   "home_page-21": {
+    ua: "Встановіть різні тарифи на доставку залежно від розміру і ваги товару",
+    en: "Set different shipping rates depending on the size and weight of the product",
+
+  },
+   "home_page-22": {
+    ua: "Плануйте доставку заздалегідь. .",
+    en: "Plan your delivery in advance. ",
+
+  },
+   "home_page-23": {
+    ua: "Використовуйте маршрутизацію доставки",
+    en: "Use delivery routing to reduce the time required for order delivery.",
+
+  },
+
+   "home_page-24": {
+    ua: "Співпрацюйте з надійними перевізниками, які забезпечать швидку та якісну доставку товару",
+    en: "Cooperate with reliable carriers",
+
+  },
+   "home_page-25": {
+    ua: "Надавайте можливість клієнтам обирати дату та час доставки",
+    en: "Allow customers to choose the date and time of delivery",
+
+  },
+   "home_page-26": {
+    ua: "Поради щодо оптимізації",
+    en: "Tips for optimization",
+
+  }, "home_page-27": {
+    ua: "",
+    en: "",
+
+  },
   
   
   
