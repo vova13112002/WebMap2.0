@@ -76,6 +76,31 @@ const homeTexts = {
     en: " Delivery optimization can be especially important for e-commerce companies that have a large number of orders, as well as for companies that operate warehouses and distribution centers. Delivery optimization can help reduce shipping costs and improve customer experience.",
 
   },
+   "home_page-14": {
+    ua: "Для безпечної доставки речей необхідно дотримуватися кількох простих кроків:Виберіть правильну упаковку: Використовуйте міцні коробки або контейнери, які можуть витримати вагу ваших речей. Для хрупких речей краще використовувати спеціальні коробки або контейнери, які мають додаткову захист.",
+    en: "    There are a few simple steps you need to follow to ensure the safe delivery of your items:Choose the right packaging: Use sturdy boxes or containers that can support the weight of your items. For fragile items,it is better to use special boxes or containers that have additional protection. ",
+
+  },
+  "home_page-15": {
+    ua: "Запакуйте речі правильно: Розмістіть важкі речі внизу, а легкі - зверху. Використовуйте кріплення, такі як пластикові пакети, скотч або ремені, щоб утримувати речі на місці. Якщо у вас є хрупкі речі, обгорніть їх в пухкі матеріали, такі як бульбашкова плівка або папір, щоб запобігти пошкодженню. Позначте коробку: Напишіть назву або опис вмісту коробки на зовнішній стороні, щоб уникнути помилок при пересиланні. Також вкажіть, якщо в коробці містяться хрупкі речі.",
+    en: "Pack your belongings properly: Place heavy items at the bottom and light items at the top. Use fasteners, such as plastic bags, tape, or straps, to keep things in place. If you have fragile items, wrap them in loose materials such as bubble wrap or paper to prevent damage. Label the box: Write the name or description of the contents of the box on the outside to avoid mistakes during shipping. Also indicate if the box contains fragile items.",
+
+  },
+   "home_page-16": {
+    ua: "Виберіть доставку: Виберіть доставку з достатньою кількістю захисту, який вам потрібен. Якщо у вас є дуже хрупкі речі, можливо, вам потрібно використовувати послугу зі страхуванням. Перевірте упаковку: Перед відправленням впевніться, що коробка добре запакована і все з кріпленням на місці. Потрібно перевірити, що нічого не рухається всередині коробки і що упаковка не має слабких місць. Враховуючи ці прості кроки, ви можете зробити безпечну доставку своїх речей.",
+    en: "Choose the shipping: Choose a shipping service with enough protection that you need. If you have very fragile items, youmay need to use a service with insurance. Check the packaging: Before shipping, make sure that the box is well packed and everything with fasteners is in place.You need to check that nothing is moving inside the box and that the packaging has no weaknesses.By keeping these simple steps in mind, you can make sure your items are shipped safely. ",
+
+  },
+  
+  
+  
+  
+
+
+  
+  
+
+  
 };
 
 
