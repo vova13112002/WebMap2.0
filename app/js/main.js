@@ -181,10 +181,10 @@ const homeTexts = {
     ua: "Відправити",
     en: "Send",
   },
-  "home_page-email":{
-ua:"Напишіть на електронну пошту",
-en:"Write by email"
-  }
+  "home_page-email": {
+    ua: "Напишіть на електронну пошту",
+    en: "Write by email",
+  },
 };
 
 // Проверка пути страницы сайта
@@ -305,3 +305,81 @@ console.log("navigator.language", checkBrowserLang());
 //     nav?.classList.remove('nav--visible');
 //   });
 // });
+//Зміна теми
+document.querySelector(".themetoggle").addEventListener("click", (event) => {
+  // event.preventDefault();
+  if (localStorage.getItem("theme") === "dark") {
+    localStorage.removeItem("theme");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+
+  addDarkClassToHTML();
+});
+
+const addDarkClassToHTML = () => {
+  try {
+    if (localStorage.getItem("theme") === "dark") {
+      document.querySelector("html").classList.add("dark");
+      document.querySelector(".themetoggle span").textContent = "dark_mode";
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      isDarkTheme = true;
+      // Оновлюємо відображення кнопки переключення теми
+      document.getElementById("myImageGitHub").src = "images/github_light.png";
+      document.getElementById("myImageInstagram").src =
+        "images/instagram_light.png";
+      document.getElementById("myImageTelegram").src =
+        "images/telegram_light.png";
+      document.getElementById("myImageEmail").src = "images/email_light.png";
+      document.querySelector(".themetoggle span").textContent = "light_mode";
+    } else {
+      isDarkTheme = false;
+      // Оновлюємо відображення кнопки переключення теми
+      document.getElementById("myImageGitHub").src = "images/github.png";
+      document.getElementById("myImageInstagram").src = "images/instagram.png";
+      document.getElementById("myImageTelegram").src = "images/telegram.png";
+      document.getElementById("myImageEmail").src = "images/mail.png";
+
+      document.querySelector(".themetoggle span").textContent = "dark_mode";
+    }
+  } catch (err) {}
+};
+
+addDarkClassToHTML();
+const button = document.getElementById("myButton");
+const image = document.getElementById(
+  "myImageGitHub"
+);
+const image2 = document.getElementById("myImageInstagram") ;
+const image3 = document.getElementById("myImageTelegram") ;
+const image4 = document.getElementById("myImageEmail") ;
+let isDarkTheme = false; // true, якщо встановлена темна тема, false - якщо встановлена світла тема
+button.addEventListener("click", function () {
+  if (isDarkTheme) {
+    image4.src = "images/mail.png";
+    image2.src = "images/instagram.png";
+    image3.src = "images/telegram.png";
+    image.src = "images/github.png";
+  } else {
+    image4.src = "images/email_light.png";
+    image2.src = "images/instagram_light.png";
+    image3.src = "images/telegram_light.png";
+    image.src = "images/github_light.png";
+  }
+  isDarkTheme = !isDarkTheme; // змінюємо тему сайту на протилежну
+});
+
+function changeTheme(isChecked) {
+  if (isChecked) {
+    document.body.setAttribute("dark", "");
+  } else {
+    document.body.removeAttribute("dark");
+  }
+}

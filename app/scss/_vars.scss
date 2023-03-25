@@ -15,3 +15,37 @@ $title: #1B3764;
           text-align: center;
           margin-bottom: 45px;
 }
+
+:root {
+  --var-bgcolor: #252525;
+  --var-fontcolor: #eee;
+}
+
+:root {
+  --var-bgcolor: #252525;
+  --var-fontcolor: #eee;
+}
+
+[dark] {
+  --var-bgcolor: #eee;
+  --var-fontcolor: #252525;
+}
+
+body {
+  background-color: var(--var-bgcolor);
+  color: var(--var-fontcolor);
+}
+
+html.dark,
+.dark body {
+  font-size: 18px;
+  font-family: sans-serif;
+  background: #eee;
+  color: #252525;
+}
+
+
+
+.dark a {
+  color: #252525;
+}
