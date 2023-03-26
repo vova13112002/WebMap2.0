@@ -675,19 +675,6 @@ text-align: center;
   }
 }
 @media (max-width: 1250px) {
-  
-}
-
-/* Великі девайси (великі десктопи, < 1200px) */
-@media (max-width: 1300px) {
-  .nav {
-    justify-content: center;
-  }
-  .menu__list {
-    gap: 0 25px;
-  }
-}
-@media (max-width:1500px){
   .nav {
   
       position: fixed;
@@ -753,6 +740,20 @@ text-align: center;
     .burger {
       display: block;
     }
+   
+}
+
+/* Великі девайси (великі десктопи, < 1200px) */
+@media (max-width: 1300px) {
+  .nav {
+    justify-content: center;
+  }
+  .menu__list {
+    gap: 0 25px;
+  }
+}
+@media (max-width:1500px){
+  
 }
 
 @media (max-width: 1600px) {
@@ -765,9 +766,17 @@ text-align: center;
 margin: 35px auto;
 }
 }
-  
+   .menu__list {
+     gap: 0 15px;
+   }
 }
 .routes__list-item{
   margin-right: 15px;
   margin-left: 15px;
+}
+.map{
+  .map__inner{
+    display: flex;
+    justify-content: center;
+  }
 }
