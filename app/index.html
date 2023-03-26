@@ -16,75 +16,48 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="container">
-
-        <nav class="nav">
-
-          <ul class="menu__list menu-left ">
-
-
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#head1" data-lang="home_page-1">
-                Home
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#head2" data-lang="home_page-2">
-                
-                Delivery optimization
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#head3" data-lang="home_page-3">
-                Creating routes
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#head4" data-lang="home_page-4">
-                Map
-              </a>
-            </li>
-            <li class=" menu__list-item">
-              <a class="menu__list-link" href="#head5" data-lang="home_page-5">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <ul class="menu__list menu-right">
-            <li class="menu__list-item">
-
-            <li class="menu__list-item">
-              <button class="header__btn" data-btn="en" data-lang="home_page-6">
-                EN
-
-              </button>
-              <!-- <button class="header__btn" data-btn="ua">Ru</button>
-                      <button class="header__btn" data-btn="en">En</button> -->
-            </li>
-            <li class="menu__list-item ">
-              <button class="header__btn" data-btn="ua" data-lang="home_page-7">
-                UA
-
-              </button>
-
-            </li>
-
-            </li>
-  <li class="menu__list-item">
-  
-    <label class="switch">
-      <input class="themetoggle" id="myButton" type="checkbox" onchange="changeTheme(this.checked)">
-      <span class="slider"></span>
-    </label>
-  
-  </li>
-
-          </ul>
-        </nav>
-
-      </div>
-    </header>
+  <header class="header">
+    <div class="container">
+    
+      <nav class="nav" data-nav>
+        <ul class="menu__list menu-left ">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#head1" data-lang="home_page-1">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#head2" data-lang="home_page-2">Delivery optimization</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#head3" data-lang="home_page-3">Creating routes</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#head4" data-lang="home_page-4">Map</a>
+          </li>
+          <li class=" menu__list-item">
+            <a class="menu__list-link" href="#head5" data-lang="home_page-5">Contact</a>
+          </li>
+        </ul>
+        <ul class="menu__list menu-right">
+          <li class="menu__list-item"></li>
+          <li class="menu__list-item">
+            <button class="header__btn" data-btn="en" data-lang="home_page-6">EN</button>
+          </li>
+          <li class="menu__list-item ">
+            <button class="header__btn" data-btn="ua" data-lang="home_page-7">UA</button>
+          </li>
+          <li class="menu__list-item">
+            <label class="switch">
+              <input class="themetoggle" id="myButton" type="checkbox" onchange="changeTheme(this.checked)">
+              <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </nav>
+        <button class="burger" data-burger aria-label="Відкрити меню" aria-expanded="false">
+          <span class="burger__line"></span>
+        </button>
+    </div>
+  </header>
     <main>
 
       <section class="earth__section"id="head1" >
@@ -335,7 +308,7 @@ Tips for creating a route
         </div>
       </div>
       </section>
-      <section class="map">
+      <!-- <section class="map">
         <div class="map">
 
         <div class="container">
@@ -344,16 +317,13 @@ Tips for creating a route
           </div>
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7460.610946727119!2d24.57356979891931!3d48.615120471246854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x4737328891413d4d%3A0x65ef1dbd8d1edfe8!2z0J3QsNC00LLRltGA0L3QsCwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!3m2!1d48.6211999!2d24.5759679!4m5!1s0x473732718634c21d%3A0x95927684a332cb10!2z0J3QsNC00LLRltGA0L3Rj9C90YHRjNC60LjQuSDQutC-0LvQtdC00LYg0J3QotCjLCDQstGD0LvQuNGG0Y8g0KHQvtCx0L7RgNC90LAsINCd0LDQtNCy0ZbRgNC90LAsINCG0LLQsNC90L4t0KTRgNCw0L3QutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!3m2!1d48.6103381!2d24.5776552!5e0!3m2!1suk!2sua!4v1679769661973!5m2!1suk!2sua"
-  width="1610" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+  width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </div>
       </section>
-      <!-- <section class="contact">
      
-        
-      </section> -->
-    </main>
+    </main> -->
     <footer class="footer" id="head5">
       <div class="footer__content">
         <div class="container">

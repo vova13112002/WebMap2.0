@@ -27,6 +27,7 @@
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
     transition: transform 0.1s ease;
+        width: 120px;
   }
   &__btn:hover {
     /* Pull the button upwards when hovered */
@@ -213,6 +214,13 @@
   .poradu__list-item:hover > .poradu__item-back {
     transform: perspective(600px) rotateY(0deg);
   }
+        // .poradu__list-item:active>.poradu__item-front {
+        //   transform: perspective(600px) rotateY(-180deg);
+        // }
+    
+        // .poradu__list-item:active>.poradu__item-back {
+        //   transform: perspective(600px) rotateY(0deg);
+        // }
   &__item-front {
     // width: 100%;
     // height: 100%;
@@ -291,15 +299,14 @@
   }
 }
 
-.map{
-margin-bottom: 60px;
+.map {
+  margin-bottom: 60px;
 
-&__title{
-  text-align: center;
-  @extend %title-font;
+  &__title {
+    text-align: center;
+    @extend %title-font;
+  }
 }
-}
-
 
 .footer {
   &__content {
@@ -324,42 +331,39 @@ margin-bottom: 60px;
     color: #eee;
     font-weight: 600;
     margin-bottom: 22px;
-   
+
     display: inline-block;
     margin-top: 22px;
     display: flex;
-    
-
   }
-&__info-img{
-
-  margin-right: 10px;
-  width: 25px;
-  height: 25px;
-}
+  &__info-img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
   &__form {
     display: flex;
   }
 
   &__form-input {
-   padding: 6px 10px 6px 18px;
-   border-radius: 21px;
-   background-color: transparent;
-   border:1px solid #eee;
-   color:red;
+    padding: 6px 10px 6px 18px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: red;
     margin-right: 9px;
     width: 100%;
   }
 
   &__form-button {
     background-color: #000000;
-    border:none;
-    color:#eee;
-    border-radius:21px;
+    border: none;
+    color: #eee;
+    border-radius: 21px;
     font-weight: 600;
     padding: 6px 12px;
     min-width: 160px;
-    cursor:pointer;
+    cursor: pointer;
   }
 
   &__social {
@@ -369,11 +373,11 @@ margin-bottom: 60px;
     display: flex;
     margin-bottom: 10px;
   }
-&__item-img{
-margin-right: 10px;
-  width: 25px;
-  height: 25px;
-}
+  &__item-img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+  }
   &__social-link {
     color: #eee;
   }
@@ -422,7 +426,7 @@ margin-right: 10px;
   right: 0;
   bottom: 0;
   background-color: rgb(0, 0, 0);
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 30px;
 
   .slider:before {
@@ -434,18 +438,18 @@ margin-right: 10px;
     left: 0.3em;
     bottom: 0.3em;
     background-color: rgb(219, 198, 2);
-    transition: .4s;
+    transition: 0.4s;
   }
 
-  input:checked+.slider {
+  input:checked + .slider {
     background-color: #000000;
   }
 
-  input:focus+.slider {
+  input:focus + .slider {
     box-shadow: 0 0 1px #000000;
   }
 
-  input:checked+.slider:before {
+  input:checked + .slider:before {
     transform: translateX(1.5em);
   }
 
@@ -461,7 +465,7 @@ margin-right: 10px;
     transition: ease 0.4s;
   }
 
-  input:checked+.slider::after {
+  input:checked + .slider::after {
     left: 80%;
     width: 0px;
     height: 0px;
@@ -492,7 +496,7 @@ margin-right: 10px;
   right: 0;
   bottom: 0;
   background-color: rgb(0, 0, 0);
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 30px;
 }
 
@@ -505,18 +509,18 @@ margin-right: 10px;
   left: 0.3em;
   bottom: 0.3em;
   background-color: rgb(219, 198, 2);
-  transition: .4s;
+  transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #000000;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px #000000;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   transform: translateX(1.5em);
 }
 
@@ -532,98 +536,235 @@ input:checked+.slider:before {
   transition: ease 0.4s;
 }
 
-input:checked+.slider::after {
+input:checked + .slider::after {
   left: 80%;
   width: 0px;
   height: 0px;
 }
 
-/* 320px - найменший девайс. Це гранична ширина екрану, під яку потрібно перевіряти верстку */
-/* 991px - ширина планшетів */
+.burger {
 
-/* == ВАРІАНТ 1 == */
-
-/* Екстремальні девайси (портретні телефони, < 576px)  */
-/* Малі девайси (горизонтальні телефони, >= 576px) */
-@media (min-width: 576px) {
+  position: relative;
+  display: none;
+  width: 50px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  margin-top: 5px;
+  z-index: 100000;
+}
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+  width: 100%;
+  height: 3px;
+  transition:opacity 0.3s ease-in-out;
+  
 }
 
-/* Середні девайси (планшети, >= 768px) */
-@media (min-width: 768px) {
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 3px;
+  left: 0;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
 }
-
-/* Великі девайси (десктопи, >= 992px) */
-@media (min-width: 992px) {
+.burger::before {
+  top: 0;
 }
-
-/* Надвеликі девайси (великі десктопи, >= 1200px) */
-@media (min-width: 1200px) {
+.burger::after {
+  bottom: 0;
 }
-
-/* Мегавеликі девайси (великі десктопи, >=1400px) */
-@media (min-width: 1400px) {
+.burger--active .burger__line {
+  opacity: 0;
 }
-
-/* == ВАРІАНТ 2 == */
-
-/* Екстремальні девайси (телефони, < 576px) */
-@media (max-width: 575.98px) {
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
 }
-
-/* Малі девайси (горизонтальні телефони, < 768px) */
-@media (max-width: 767.98px) {
+.burger--active::after {
+  bottom:auto;
+  top: 50%;
+  transform: rotate(-45deg);
 }
-
-/* Середні девайси (планшети, < 992px) */
-@media (max-width: 991.98px) {
-}
-
-/* Великі девайси (великі десктопи, < 1200px) */
-@media (max-width: 1199.98px) {
-}
-
-/* Мегавеликі девайси (великі десктопи) */
-/* Тут нема @media, так як такі брейкпойнти не мають верхньої межі по ширині width */
-
-/* == ВАРІАНТ 2 (власний)== */
-
+ .stop-scroll {
+   overflow: hidden;
+   
+ }
 /* Екстремальні девайси (телефони, < 576px) */
 @media (max-width: 576px) {
+  .poradu__list-item{
+    width: 305px;
+  }
 }
 
 /* Малі девайси (горизонтальні телефони, < 768px) */
 @media (max-width: 768px) {
+  .footer__inner{
+    gap:0 15px;
+    display: block;
+    text-align: center;
+  }
+  .footer__social{
+    display: flex;
+    justify-content: center;
+    gap:0 15px;
+    margin-bottom: 15px;
+  }
+  .footer__form{
+    margin-bottom: 15px;
+  }
+  .footer__info-email{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Середні девайси (планшети, < 992px) */
+@media (max-width: 850px) {
+.poradu__list {
+    display: block;
+   
+  }
+  .routes__img{
+    width: auto;
+    height: auto;
+  }
+
+    .poradu__list-item {
+    margin-bottom: 35px;
+  }
+}
 @media (max-width: 992px) {
+  .routes__subtitle{
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+
+  .earth{
+    display: block;
+    padding-top: 0;
+    &__subtitle{
+text-align: center;
+    }
+    &__text{
+text-align: center;
+    }
+    &__img{
+      display: none;
+    }
+  }
+  .poradu{
+    margin-bottom: 75px;
+  }
+  .routes{
+    margin-bottom: 55px;
+  }
+}
+@media (max-width: 1250px) {
+  
 }
 
 /* Великі девайси (великі десктопи, < 1200px) */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .nav {
+    justify-content: center;
+  }
+  .menu__list {
+    gap: 0 25px;
+  }
+}
+@media (max-width:1500px){
+  .nav {
+  
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      padding: 30px;
+      transform: translateY(-150%);
+      transition: transform 0.6s ease-in-out;
+  
+      overflow-y: auto;
+      display: block;
+      left: 0;
+      right: 0;
+      background: #303030;
+      height: calc(100vh - var(--header-height));
+    }
+  
+    .earth__title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .poradu__subtitle {
+      width: auto;
+    }
+  
+    .deliver {
+      margin-bottom: 100px;
+    }
+  
+    .nav--visible {
+  
+      transform: none;
+      //   top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+    }
+  
+    .menu__list-item {
+      width: 100%;
+    }
+  
+    .menu__list {
+      margin-bottom: 15px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu__list-item:not(:last-child) {
+      margin-right: 0;
+    }
+  
+    .menu__list-link {
+      padding: 20px 30px;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+    }
+  
+    .burger {
+      display: block;
+    }
 }
 
-/* Мегавеликі девайси (великі десктопи) */
-/* Тут нема @media, так як такі брейкпойнти не мають верхньої межі по ширині width */
-
-/* == ВАРІАНТ 3 == */
-
-/* Екстремальні девайси (портретні телефони, < 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 1600px) {
+.poradu__list{
+  grid-template-columns:1fr 1fr;
+  gap:15px 15px;
+  // grid-template-rows:1fr;
+  // gap:10px 10px;
+.poradu__list-item{
+margin: 35px auto;
 }
-
-/* Малі девайси (горизонтальні телефони, >= 575px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
 }
-
-/* Середні девайси (планшети, >= 768px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+  
 }
-
-/* Великі девайси (десктопи, >= 992px) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-}
-
-/* Мегавеликі девайси (великі десктопи, >= 1200px) */
-@media (min-width: 1200px) {
+.routes__list-item{
+  margin-right: 15px;
+  margin-left: 15px;
 }
