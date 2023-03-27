@@ -614,6 +614,7 @@ input:checked + .slider::after {
     display: block;
     text-align: center;
   }
+
   .footer__social{
     display: flex;
     justify-content: center;
@@ -784,5 +785,10 @@ margin-bottom: 75px;
   .map__inner{
     display: flex;
     justify-content: center;
+  }
+}
+.nav--visible{
+  .menu__list-link{
+    color:gold;
   }
 }
