@@ -37,7 +37,7 @@ body {
 }
 
 html.dark,
-.dark body, {
+.dark body {
   font-size: 18px;
   font-family: sans-serif;
   background: #eee;
@@ -46,6 +46,22 @@ html.dark,
 
 
 
-.dark a {
-  color: #252525;
+// .dark a {
+//   color: #252525;
+// }
+// .nav--visible{
+//   .menu__list-link{
+//     color:#eee;
+//   }
+// }
+.dark .nav--visible{
+background-color: #eee;
+
+.menu__list-link {
+    color: #252525;
+  }
+ 
 }
+
+
+

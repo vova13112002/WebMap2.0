@@ -271,40 +271,23 @@ function checkBrowserLang() {
 
 console.log("navigator.language", checkBrowserLang());
 
-//JS Scroll
+// JS Scroll
 
-// const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]')
 
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
 
-//     const blockID = anchor.getAttribute('href')
-//     document.querySelector('' + blockID).scrollIntoView({
-//       behavior: "smooth",
-//       block: "start"
-//     })
+    const blockID = anchor.getAttribute('href')
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
 
-//   })
-// }
+  })
+}
 
-// //burger
-// const burger = document?.querySelector('[data-burger]');
-// const nav = document?.querySelector('[data-nav]');
-// const navItems = nav?.querySelectorAll('a');
-// const body = document.body;
-// burger?.addEventListener('click', () => {
-//   body.classList.toggle('stop-scroll');
-//   burger?.classList.toggle('burger--active');
-//   nav?.classList.toggle('nav--visible');
-// });
-// navItems.forEach(el=>{
-//   el.addEventListener('click',()=>{
-//     body.classList.remove('stop-scroll');
-//     burger?.classList.remove('burger--active');
-//     nav?.classList.remove('nav--visible');
-//   });
-// });
 //Зміна теми
 document.querySelector(".themetoggle").addEventListener("click", (event) => {
   // event.preventDefault();
