@@ -601,8 +601,8 @@ input:checked + .slider::after {
   transform: rotate(-45deg);
 }
  .stop-scroll {
-   overflow-y: hidden;
-   
+  overflow: hidden;
+
  }
 /* Екстремальні девайси (телефони, < 576px) */
 @media (max-width: 576px) {
@@ -689,7 +689,8 @@ text-align: center;
       transform: translateY(-150%);
       transition: transform 0.6s ease-in-out;
   
-      overflow-y: auto;
+      // overflow-y: auto;
+     
       display: block;
       left: 0;
       right: 0;
@@ -697,9 +698,7 @@ text-align: center;
       // height: calc(100vh - var(--header-height));
       height: 100%;
     }
-    body .lock{
-      overflow: hidden;
-    }
+   
   
     .earth__title {
       display: flex;
@@ -758,7 +757,9 @@ text-align: center;
     .burger {
       display: block;
     }
-
+// body .lock{
+// overflow: hidden;
+// }
 }
 
 /* Великі девайси (великі десктопи, < 1200px) */
@@ -803,5 +804,6 @@ margin-bottom: 75px;
     display: flex;
     justify-content: center;
   }
+ 
 }
 

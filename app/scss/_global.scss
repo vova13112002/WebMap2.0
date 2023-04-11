@@ -1,19 +1,18 @@
 html,
 body {
-
-	// overflow-x: hidden;
-
-	background-color: #eee;
-  
+	// overflow: hidden;
+		overflow-x: hidden;
+			touch-action: none;
   
 	font-family: 'Roboto', sans-serif;
 	// background-color: var(--var-bgcolor);
 	// color: var(--var-fontcolor);
 	font-size: 18px;
-	
+	height: 100%;
 	background: #303030;
 	color: #fff;
 }
+
 
 .wrapper {
 	display: flex;
