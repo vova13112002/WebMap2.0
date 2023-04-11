@@ -193,9 +193,6 @@ function checkPagePathName() {
     case "/index.html":
       currentTexts = homeTexts;
       break;
-    // case "/another_page.html":
-    //   currentTexts = anotherTexts;
-    //   break;
 
     default:
       currentTexts = homeTexts;
@@ -273,19 +270,18 @@ console.log("navigator.language", checkBrowserLang());
 
 // JS Scroll
 
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-    const blockID = anchor.getAttribute('href')
-    document.querySelector('' + blockID).scrollIntoView({
+    const blockID = anchor.getAttribute("href");
+    document.querySelector("" + blockID).scrollIntoView({
       behavior: "smooth",
-      block: "start"
-    })
-
-  })
+      block: "start",
+    });
+  });
 }
 
 //Зміна теми
@@ -337,12 +333,10 @@ const addDarkClassToHTML = () => {
 
 addDarkClassToHTML();
 const button = document.getElementById("myButton");
-const image = document.getElementById(
-  "myImageGitHub"
-);
-const image2 = document.getElementById("myImageInstagram") ;
-const image3 = document.getElementById("myImageTelegram") ;
-const image4 = document.getElementById("myImageEmail") ;
+const image = document.getElementById("myImageGitHub");
+const image2 = document.getElementById("myImageInstagram");
+const image3 = document.getElementById("myImageTelegram");
+const image4 = document.getElementById("myImageEmail");
 let isDarkTheme = false; // true, якщо встановлена темна тема, false - якщо встановлена світла тема
 button.addEventListener("click", function () {
   if (isDarkTheme) {
@@ -368,38 +362,35 @@ function changeTheme(isChecked) {
 }
 //burger
 
-  // const burger = document?.querySelector('[data-burger]');
-  
-  // const nav = document?.querySelector('[data-nav]');
+// const burger = document?.querySelector('[data-burger]');
 
-  // burger?.addEventListener('click', () => {
-  //   nav.classList.toggle('nav--visible');
-  // });
+// const nav = document?.querySelector('[data-nav]');
 
-  const burger = document?.querySelector('[data-burger]');
-const nav = document?.querySelector('[data-nav]');
-const navItems = nav?.querySelectorAll('a');
+// burger?.addEventListener('click', () => {
+//   nav.classList.toggle('nav--visible');
+// });
+
+const burger = document?.querySelector("[data-burger]");
+const nav = document?.querySelector("[data-nav]");
+const navItems = nav?.querySelectorAll("a");
 const body = document.body;
-const header = document?.querySelector('.header');
-const headerHeight = header.offsetHeight;
-console.log(headerHeight)
-document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
+// const header = document?.querySelector(".header");
+// const headerHeight = header.offsetHeight;
+// console.log(headerHeight);
+// document
+//   .querySelector(":root")
+//   .style.setProperty("--header-height", `${headerHeight}px`);
 
-burger?.addEventListener('click', () => {
-  body.classList.toggle('stop-scroll');
-  burger?.classList.toggle('burger--active');
-  nav?.classList.toggle('nav--visible');
-
-;
-
+burger?.addEventListener("click", () => {
+  body.classList.toggle("stop-scroll");
+  burger?.classList.toggle("burger--active");
+  nav?.classList.toggle("nav--visible");
 });
 
-navItems.forEach(el => {
-  el.addEventListener('click', () => {
-    body.classList.remove('stop-scroll');
-  burger?.classList.remove('burger--active');
-  nav?.classList.remove('nav--visible');
+navItems.forEach((el) => {
+  el.addEventListener("click", () => {
+    body.classList.remove("stop-scroll");
+    burger?.classList.remove("burger--active");
+    nav?.classList.remove("nav--visible");
   });
 });
-
-
