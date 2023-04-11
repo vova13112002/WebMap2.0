@@ -389,6 +389,9 @@ burger?.addEventListener('click', () => {
   body.classList.toggle('stop-scroll');
   burger?.classList.toggle('burger--active');
   nav?.classList.toggle('nav--visible');
+
+;
+
 });
 
 navItems.forEach(el => {
